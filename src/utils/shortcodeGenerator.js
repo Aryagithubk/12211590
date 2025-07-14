@@ -12,7 +12,7 @@ const generateUniqueShortcode = async (desired = null) => {
     return desired;
   }
   let code;
-  // eslint-disable-next-line no-constant-condition
+
   while (true) {
     code = randomString();
     if (!(await Url.exists({ shortcode: code }))) break;

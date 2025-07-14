@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Ensure logs directory exists
+
 const logDir = path.join(__dirname, '..', '..', 'logs');
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 
@@ -28,4 +28,3 @@ const loggerMiddleware = (req, res, next) => {
 };
 
 module.exports = { log, loggerMiddleware };
-//plag 
