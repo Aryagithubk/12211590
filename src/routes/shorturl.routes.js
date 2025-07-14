@@ -5,5 +5,4 @@ const { shortenUrl, getStats, redirectToLongUrl } = require('../controllers/shor
 router.post('/', shortenUrl);
 router.get('/:shortcode', getStats);
 router.get('/r/:shortcode', redirectToLongUrl); 
-
 module.exports = router;
